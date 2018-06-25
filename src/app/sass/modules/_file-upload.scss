@@ -1,0 +1,87 @@
+section.upload {
+    padding: 50px 20px;
+    background-color: $black;
+
+    @include full-block();
+
+    form {
+        max-width: 1340px;
+        width: 100%;
+        margin: 0 auto;
+        font-size: 1.2em;
+        line-height: 1.5;
+
+        @include full-block();
+
+        .upload-container {
+            margin-bottom: 30px;
+
+            @include full-block();
+
+            .upload-input {
+                position: relative;
+                overflow: hidden;
+                width: 100%;
+
+                @include flex-box();
+                @include align-items(center);
+                @include flex-wrap(nowrap);
+                @include justify-content(flex-start);
+
+                .file-button {
+                    background-color: white;
+                    color: $black;
+                    padding: 10px 20px;
+                    text-align: center;
+                    width: 150px;
+
+                    @include transition(background-color .3s ease-out, color .3s ease-out);
+                }
+
+                .file-value {
+                    color: $blue;
+                    padding-left: 10px;
+                    white-space: nowrap; 
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    width: calc(100% - 150px);
+                }
+
+                input.file-input {
+                    @include full-absolute();
+                    @include opacity(0);
+
+                    z-index: 2;
+                    cursor: pointer;
+                    width: 300%;
+                    margin-left: -200%;
+
+                }
+
+                &.active .file-button {
+                    text-decoration: none;
+                    color: white;
+                    background-color: $blue;
+                }
+
+                @media only screen and (max-width: $mobile) {
+                    @include flex-wrap(wrap);
+
+                    .file-button,
+                    .file-value {
+                        width: 100%;
+                    }
+
+                    .file-value {
+                        padding: 10px 0 0;
+                        white-space: normal;
+                        text-overflow: unset;
+                        word-break: break-all;
+                    }
+                }
+            }
+
+            &:last-of-type { margin-bottom: 0; }
+        }
+    }
+}
