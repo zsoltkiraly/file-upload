@@ -1,7 +1,7 @@
 # File upload v1.0.4
 
 <br />
-<a href="http://zsoltkiraly.com/developments/file-upload/" target="_blank">DEMO PAGE</a>
+<a href="https://zsoltkiraly.com/developments/file-upload/" target="_blank">DEMO PAGE</a>
 
 #
 <br />
