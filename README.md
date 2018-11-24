@@ -1,9 +1,18 @@
-# File upload v1.0.4
+# Drag & Drop file upload v1.0.4
 
 <br />
 <a href="https://zsoltkiraly.com/developments/file-upload/" target="_blank">DEMO PAGE</a><br /><br />
 
 <img src="http://zsoltkiraly.com/developments/_images/file-upload-001.jpg">
+
+
+## DRAG & DROP FILE UPLOAD FUNCTIONS
+
+- Full responsive
+- Validation: type (only image) and image size (max. width 1920px, min. height 300px)
+- Remove image
+- Counter
+
 
 #
 <br />
