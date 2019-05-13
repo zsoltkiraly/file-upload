@@ -1,9 +1,11 @@
-'use scrict'
 
 /*
 File upload - Code by Zsolt Király
 v1.0.4 - 2018-06-25
 */
+
+'use scrict'
+
 var fileUpload = function() {
 
     var forEach = function (array, callback, scope) {
